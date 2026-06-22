@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Evaluación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 140px; /* Ajuste para que el menú no cubra los títulos */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+        /* Estilos personalizados para las tablas */
+        .table-container {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8 lg:p-12 pt-40 md:pt-36" id="inicio">
+
+    <!-- Menú de navegación fijo (Estilo Topbar Moderno para 6 items) -->
+    <nav class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm transition-all">
+        <div class="max-w-5xl mx-auto px-4 py-3 md:py-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
+                <a href="#rubrica-1" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Rúbrica 1</span>
+                </a>
+                
+                <a href="#rubrica-2" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Rúbrica 2</span>
+                </a>
+                
+                <a href="#rubrica-3" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Rúbrica 3</span>
+                </a>
+
+                <a href="#rubrica-4" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Rúbrica 4</span>
+                </a>
+
+                <a href="#rubrica-5" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Rúbrica 5</span>
+                </a>
+
+                <a href="#rubrica-6" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Rúbrica 6</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="bg-blue-900 text-white py-8 px-8 md:px-12">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight">6. Evaluación</h1>
+        </header>
+
+        <div class="p-6 md:p-10 space-y-10 pt-8">
+
+            <!-- Introducción -->
+            <div class="bg-blue-50/50 p-6 rounded-xl border border-blue-100 shadow-sm">
+                <p class="text-gray-700 leading-relaxed text-justify md:text-left mb-4">
+                    Para la evaluación de las actividades del curso "IA Generativa para la Preparación de Pruebas Internacionales de Inglés", se proponen rúbricas analíticas fundamentadas en los niveles de progresión de la UNESCO (Adquirir, Profundizar, Crear), las dimensiones del framework COMPETIA-LAC (Técnica, Pedagógica, Ética, Evaluativa) y los criterios de evaluación de producción escrita del MCER.
+                </p>
+                <p class="text-gray-700 leading-relaxed text-justify md:text-left">
+                    A continuación, se detalla la propuesta de evaluación para cada actividad:
+                </p>
+            </div>
+
+            <!-- Rúbrica 1 -->
+            <section aria-labelledby="rubrica-1-titulo" id="rubrica-1">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
+                    <h2 id="rubrica-1-titulo" class="text-xl md:text-2xl font-bold text-blue-900 mb-2 border-b border-gray-100 pb-3">Rúbrica 1: Auditoría de Justicia Epistémica y Mapeo del MCER</h2>
+                    <p class="text-gray-700 font-semibold mb-6">Producto: <span class="font-normal">Cuadro comparativo y ficha de alineación técnica.</span></p>
+                    
+                    <div class="table-container overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-700 min-w-[800px]">
+                            <thead class="text-xs text-blue-900 uppercase bg-blue-50 border-b border-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Criterio</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Inicial (Adquirir)</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Intermedio (Profundizar)</th>
+                                    <th scope="col" class="px-4 py-3 w-1/4">Nivel Avanzado (Crear)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Justicia Epistémica [1.3, 562]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Identifica sesgos eurocéntricos básicos en los contenidos de la IA.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Contrasta fuentes globales y locales usando una "ecología de saberes".</td>
+                                    <td class="px-4 py-3">Propone una "contra-narrativa" situada que desafía el colonialismo digital.</td>
+                                </tr>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Alineación MCER [1.1, 167]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Relaciona la tarea con niveles generales (A1-C2).</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Justifica la alineación usando descriptores "Can Do" específicos.</td>
+                                    <td class="px-4 py-3">Redacta descriptores ajustados que vinculan el aprendizaje con la evaluación real.</td>
+                                </tr>
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Vigilancia Epistémica</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Usa la IA sin cuestionar la veracidad de la información regional.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Identifica vacíos de conocimiento local en las respuestas de la IA.</td>
+                                    <td class="px-4 py-3">Utiliza la IA para visibilizar activamente saberes locales marginados.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rúbrica 2 -->
+            <section aria-labelledby="rubrica-2-titulo" id="rubrica-2">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500"></div>
+                    <h2 id="rubrica-2-titulo" class="text-xl md:text-2xl font-bold text-indigo-900 mb-2 border-b border-gray-100 pb-3">Rúbrica 2: Rediseño Curricular (Habilidades Reales vs. Mocks)</h2>
+                    <p class="text-gray-700 font-semibold mb-6">Producto: <span class="font-normal">Plan de unidad didáctica rediseñado.</span></p>
+                    
+                    <div class="table-container overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-700 min-w-[800px]">
+                            <thead class="text-xs text-indigo-900 uppercase bg-indigo-50 border-b border-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Criterio</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Inicial (Adquirir)</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Intermedio (Profundizar)</th>
+                                    <th scope="col" class="px-4 py-3 w-1/4">Nivel Avanzado (Crear)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Impacto Pedagógico [1.2, 408]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Mantiene el enfoque en simulacros (mocks) como eje central.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Equilibra el entrenamiento técnico con algunas habilidades académicas.</td>
+                                    <td class="px-4 py-3">Prioriza habilidades transferibles al TLU (Target Language Use) sobre el puntaje.</td>
+                                </tr>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Análisis de Washback [1.2, 351]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Identifica el efecto del examen en la enseñanza de forma general.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Analiza cómo los mocks tradicionales generan un "aprendizaje superficial".</td>
+                                    <td class="px-4 py-3">Diseña tareas que promueven un washback positivo y aprendizaje profundo.</td>
+                                </tr>
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Conciencia Estructural [3.1, 423]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Incluye ejercicios básicos de gramática y vocabulario aislado.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Propone actividades para mejorar el párrafo y la organización.</td>
+                                    <td class="px-4 py-3">Integra planificación, oraciones temáticas y uso de evidencia académica.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rúbrica 3 -->
+            <section aria-labelledby="rubrica-3-titulo" id="rubrica-3">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-teal-500"></div>
+                    <h2 id="rubrica-3-titulo" class="text-xl md:text-2xl font-bold text-teal-900 mb-2 border-b border-gray-100 pb-3">Rúbrica 3: Prototipado de Programas con "Bricolaje Tecnológico"</h2>
+                    <p class="text-gray-700 font-semibold mb-6">Producto: <span class="font-normal">Documento de diseño curricular modular.</span></p>
+                    
+                    <div class="table-container overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-700 min-w-[800px]">
+                            <thead class="text-xs text-teal-900 uppercase bg-teal-50 border-b border-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Criterio</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Inicial (Adquirir)</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Intermedio (Profundizar)</th>
+                                    <th scope="col" class="px-4 py-3 w-1/4">Nivel Avanzado (Crear)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Bricolaje (Gambiarra) [2.3, 560]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Usa una sola herramienta de IA de forma aislada.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Combina herramientas (ej. Perplexity + Canvas) para resolver problemas.</td>
+                                    <td class="px-4 py-3">Crea soluciones híbridas creativas adaptadas a las limitaciones técnicas.</td>
+                                </tr>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Adaptación Curricular [2.4, 561]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">El cronograma es rígido y no contempla el perfil del alumno.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Diseña rutas de aprendizaje que alternan interacción humana e IA.</td>
+                                    <td class="px-4 py-3">Crea itinerarios personalizados basados en diagnósticos analíticos de IA.</td>
+                                </tr>
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Curación de Contenidos [2.3, 560]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Utiliza textos comerciales prefabricados sin modificar.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Selecciona textos auténticos usando IA para el nivel del MCER.</td>
+                                    <td class="px-4 py-3">Evalúa críticamente la calidad y pertinencia de los materiales generados.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rúbrica 4 -->
+            <section aria-labelledby="rubrica-4-titulo" id="rubrica-4">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-purple-500"></div>
+                    <h2 id="rubrica-4-titulo" class="text-xl md:text-2xl font-bold text-purple-900 mb-2 border-b border-gray-100 pb-3">Rúbrica 4: Creación de Materiales Multimodales (Hackeo Pedagógico)</h2>
+                    <p class="text-gray-700 font-semibold mb-6">Producto: <span class="font-normal">Recurso multimodal y guía pedagógica.</span></p>
+                    
+                    <div class="table-container overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-700 min-w-[800px]">
+                            <thead class="text-xs text-purple-900 uppercase bg-purple-50 border-b border-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Criterio</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Inicial (Adquirir)</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Intermedio (Profundizar)</th>
+                                    <th scope="col" class="px-4 py-3 w-1/4">Nivel Avanzado (Crear)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Hackeo Pedagógico [3.2, 560]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Sigue los tutoriales básicos de creación de la IA.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Adapta la herramienta para fines educativos no previstos.</td>
+                                    <td class="px-4 py-3">Reconfigura la herramienta para crear estímulos de examen culturalmente situados.</td>
+                                </tr>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Calidad Multimodal [3.2, 95]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">El recurso es puramente textual o visual básico.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Integra audio y video de forma coherente con la tarea del examen [3.2].</td>
+                                    <td class="px-4 py-3">Crea una experiencia inmersiva que facilita la comprensión de temas complejos.</td>
+                                </tr>
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Mediación Algorítmica</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">La IA reemplaza el rol del docente en la explicación.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">La IA actúa como un "tercer participante" en el diálogo pedagógico.</td>
+                                    <td class="px-4 py-3">El material potencia la agencia humana y la reflexión colectiva [1.4, 566].</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rúbrica 5 -->
+            <section aria-labelledby="rubrica-5-titulo" id="rubrica-5">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-pink-500"></div>
+                    <h2 id="rubrica-5-titulo" class="text-xl md:text-2xl font-bold text-pink-900 mb-2 border-b border-gray-100 pb-3">Rúbrica 5: Laboratorio de Evaluación Auténtica Aumentada</h2>
+                    <p class="text-gray-700 font-semibold mb-6">Producto: <span class="font-normal">Rúbrica diseñada y reporte de feedback.</span></p>
+                    
+                    <div class="table-container overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-700 min-w-[800px]">
+                            <thead class="text-xs text-pink-900 uppercase bg-pink-50 border-b border-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Criterio</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Inicial (Adquirir)</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Intermedio (Profundizar)</th>
+                                    <th scope="col" class="px-4 py-3 w-1/4">Nivel Avanzado (Crear)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Feedback Analítico [3.4, 211]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Se limita a correcciones gramaticales y ortográficas superficiales.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Proporciona datos sobre perfiles de vocabulario y precisión [182, 3.4].</td>
+                                    <td class="px-4 py-3">Ofrece retroalimentación detallada sobre la calidad argumentativa y pragmática [3.3, 211].</td>
+                                </tr>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Diseño de Rúbrica [3.3, 354]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Usa una rúbrica genérica orientada a la calificación (grading).</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Diseña una rúbrica orientada al examinado para autoevaluación [3.3, 354].</td>
+                                    <td class="px-4 py-3">Reconceptualiza los criterios de éxito en entornos de co-creación con IA.</td>
+                                </tr>
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Integridad Académica [1.3, 312]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">No supervisa el uso de la IA en la producción del alumno.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Analiza la interacción estudiante-IA para detectar errores conceptuales [3.4].</td>
+                                    <td class="px-4 py-3">Garantiza la responsabilidad humana y ética en las decisiones de evaluación.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rúbrica 6 -->
+            <section aria-labelledby="rubrica-6-titulo" id="rubrica-6">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-orange-500"></div>
+                    <h2 id="rubrica-6-titulo" class="text-xl md:text-2xl font-bold text-orange-900 mb-2 border-b border-gray-100 pb-3">Rúbrica 6: Plan de Coaching Instruccional (Ciclo PIC)</h2>
+                    <p class="text-gray-700 font-semibold mb-6">Producto: <span class="font-normal">Portafolio final de Coaching Instruccional.</span></p>
+                    
+                    <div class="table-container overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-700 min-w-[800px]">
+                            <thead class="text-xs text-orange-900 uppercase bg-orange-50 border-b border-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Criterio</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Inicial (Adquirir)</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-gray-200 w-1/4">Nivel Intermedio (Profundizar)</th>
+                                    <th scope="col" class="px-4 py-3 w-1/4">Nivel Avanzado (Crear)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Ciclo PIC [4.1, 30]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Describe las metas sin un plan de acción concreto.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Implementa las fases de Identificar y Aprender con apoyo de la IA.</td>
+                                    <td class="px-4 py-3">Completa el ciclo recursivo (Identificar, Aprender, Mejorar) con evidencias [30, 4.1].</td>
+                                </tr>
+                                <tr class="bg-white border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Gestión No Cognitiva [4.2, 256]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Se enfoca solo en el conocimiento lingüístico.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Incluye estrategias para manejar la ansiedad ante el test [256, 4.2].</td>
+                                    <td class="px-4 py-3">Fortalece la confianza y la "sabiduría del test" (test-wiseness) del alumno [256, 4.2].</td>
+                                </tr>
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-4 py-3 font-medium text-gray-900 border-r border-gray-100">Autonomía Profesional [4.3, 317]</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Depende de las herramientas sugeridas en el curso.</td>
+                                    <td class="px-4 py-3 border-r border-gray-100">Evalúa proactivamente la efectividad de nuevas herramientas de IA [317, 4.3].</td>
+                                    <td class="px-4 py-3">Participa en comunidades de práctica para la co-creación de estándares éticos [4.4, 563].</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Botón volver al inicio al final de la página -->
+            <div class="mt-12 text-center border-t border-gray-200 pt-8">
+                <a href="#inicio" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    Volver al inicio
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
