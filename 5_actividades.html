@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Actividades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 140px; /* Ajuste para que el menú no cubra los títulos */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8 lg:p-12 pt-40 md:pt-36" id="inicio">
+
+    <!-- Menú de navegación fijo (Estilo Topbar Moderno para 6 items) -->
+    <nav class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm transition-all">
+        <div class="max-w-5xl mx-auto px-4 py-3 md:py-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
+                <a href="#actividad-1" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Actividad 1</span>
+                </a>
+                
+                <a href="#actividad-2" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Actividad 2</span>
+                </a>
+                
+                <a href="#actividad-3" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Actividad 3</span>
+                </a>
+
+                <a href="#actividad-4" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Actividad 4</span>
+                </a>
+
+                <a href="#actividad-5" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Actividad 5</span>
+                </a>
+
+                <a href="#actividad-6" class="flex flex-row items-center justify-center p-2 sm:px-3 sm:py-2 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Actividad 6</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="bg-blue-900 text-white py-8 px-8 md:px-12">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight">5. Actividades</h1>
+        </header>
+
+        <div class="p-8 md:p-12 space-y-8 pt-8">
+
+            <!-- Actividad 1 -->
+            <section aria-labelledby="actividad-1-titulo" id="actividad-1">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
+                    <h2 id="actividad-1-titulo" class="text-xl md:text-2xl font-bold text-blue-900 mb-4 border-b border-gray-100 pb-3">Actividad 1: Auditoría de Justicia Epistémica y Mapeo del MCER</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <p><strong class="text-gray-900">Descripción:</strong> El participante seleccionará una tarea de producción escrita de una prueba internacional (IELTS/TOEFL) y utilizará Perplexity para investigar perspectivas académicas locales sobre el tema de dicha tarea. Deberá contrastar si los contenidos generados por la IA reflejan sesgos eurocéntricos o si permiten una "ecología de saberes" que valore el contexto latinoamericano, vinculando finalmente la tarea con descriptores "Can Do" específicos del MCER (niveles B2-C1) [1.3, 1.1, 562].</p>
+                        <p><strong class="text-gray-900">Objetivos de aprendizaje:</strong> Analizar el MCER y adoptar una postura crítica y ética frente al sesgo algorítmico y el colonialismo digital (Objetivo 1 y 3).</p>
+                        <p><strong class="text-gray-900">Material a entregar:</strong> Cuadro comparativo de fuentes (globales vs. locales) y ficha de alineación técnica con descriptores del MCER.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividad 2 -->
+            <section aria-labelledby="actividad-2-titulo" id="actividad-2">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500"></div>
+                    <h2 id="actividad-2-titulo" class="text-xl md:text-2xl font-bold text-indigo-900 mb-4 border-b border-gray-100 pb-3">Actividad 2: Rediseño Curricular: De la "Orientación Técnica" a las Habilidades Reales</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <p><strong class="text-gray-900">Descripción:</strong> Utilizando NotebookLM como asistente de análisis, el docente cargará muestras de mocks (simulacros) tradicionales para identificar casos de "aprendizaje superficial" o memorización de fragmentos [1.2, 408]. A partir de este diagnóstico, deberá proponer una reestructuración de una unidad didáctica que priorice el desarrollo de habilidades académicas duraderas (como la conciencia estructural y el uso de evidencia) por encima del simple entrenamiento para el puntaje [1.2, 423].</p>
+                        <p><strong class="text-gray-900">Objetivos de aprendizaje:</strong> Analizar enfoques metodológicos vigentes para fundamentar el diseño de programas de entrenamiento (Objetivo 1).</p>
+                        <p><strong class="text-gray-900">Material a entregar:</strong> Plan de unidad didáctica rediseñado con enfoque en habilidades transferibles.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividad 3 -->
+            <section aria-labelledby="actividad-3-titulo" id="actividad-3">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-teal-500"></div>
+                    <h2 id="actividad-3-titulo" class="text-xl md:text-2xl font-bold text-teal-900 mb-4 border-b border-gray-100 pb-3">Actividad 3: Prototipado de Programas con "Bricolaje Tecnológico"</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <p><strong class="text-gray-900">Descripción:</strong> En el marco del PBL, el participante diseñará la estructura de un programa de entrenamiento de 4 semanas para un grupo específico de estudiantes. Deberá aplicar la técnica de "bricolaje tecnológico" ( gambiarra ), combinando herramientas como Perplexity para la curación de textos auténticos y Gemini Canvas para la creación de rutas de aprendizaje adaptativas según el perfil de los alumnos.</p>
+                        <p><strong class="text-gray-900">Objetivos de aprendizaje:</strong> Diseñar programas de entrenamiento integrando herramientas de IA generativa para personalizar el aprendizaje (Objetivo 2).</p>
+                        <p><strong class="text-gray-900">Material a entregar:</strong> Documento de diseño curricular modular con cronograma y selección de recursos curados por IA.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividad 4 -->
+            <section aria-labelledby="actividad-4-titulo" id="actividad-4">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-purple-500"></div>
+                    <h2 id="actividad-4-titulo" class="text-xl md:text-2xl font-bold text-purple-900 mb-4 border-b border-gray-100 pb-3">Actividad 4: Creación de Materiales Multimodales para el "Hackeo Pedagógico"</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <p><strong class="text-gray-900">Descripción:</strong> El docente creará un recurso de estímulo (prompt visual o auditivo) para una sección de Speaking o Listening utilizando Voxdeck o RunwayML [3.2, 566]. El objetivo es realizar un "hackeo pedagógico", adaptando estas herramientas de creación creativa para generar materiales de examen que sean culturalmente situados y que desafíen la opacidad de los recursos prefabricados comerciales.</p>
+                        <p><strong class="text-gray-900">Objetivos de aprendizaje:</strong> Crear materiales de entrenamiento multimodales alineados con formatos de pruebas internacionales (Objetivo 2).</p>
+                        <p><strong class="text-gray-900">Material a entregar:</strong> Enlace al recurso multimodal generado y guía de uso pedagógico para el estudiante.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividad 5 -->
+            <section aria-labelledby="actividad-5-titulo" id="actividad-5">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-pink-500"></div>
+                    <h2 id="actividad-5-titulo" class="text-xl md:text-2xl font-bold text-pink-900 mb-4 border-b border-gray-100 pb-3">Actividad 5: Laboratorio de Evaluación Auténtica Aumentada</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <p><strong class="text-gray-900">Descripción:</strong> A partir de una producción escrita real de un estudiante, el docente diseñará una rúbrica analítica orientada al examinado [3.3, 354]. Utilizará NotebookLM para procesar la producción del alumno y generar un reporte de retroalimentación analítica aumentada, que no solo corrija la gramática, sino que evalúe la calidad de los argumentos y la cohesión textual basada en perfiles lingüísticos empíricos [3.3, 3.4, 182].</p>
+                        <p><strong class="text-gray-900">Objetivos de aprendizaje:</strong> Integrar IA generativa para personalizar el feedback y optimizar los procesos de evaluación (Objetivo 2).</p>
+                        <p><strong class="text-gray-900">Material a entregar:</strong> Rúbrica diseñada y reporte de feedback personalizado generado en colaboración con la IA.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividad 6 -->
+            <section aria-labelledby="actividad-6-titulo" id="actividad-6">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-orange-500"></div>
+                    <h2 id="actividad-6-titulo" class="text-xl md:text-2xl font-bold text-orange-900 mb-4 border-b border-gray-100 pb-3">Actividad 6: Plan de Coaching Instruccional: El Ciclo PIC</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <p><strong class="text-gray-900">Descripción:</strong> El participante diseñará un plan de intervención docente aplicando el ciclo de Partnership Instructional Coaching (PIC): Identificar metas lingüísticas, Aprender estrategias mediadas por IA y Mejorar la práctica [30, 4.1]. El plan debe detallar cómo el docente actuará como coach experto para gestionar factores no cognitivos, como la ansiedad ante el test, utilizando la IA como un "actante" facilitador del proceso [4.2, 541, 566].</p>
+                        <p><strong class="text-gray-900">Objetivos de aprendizaje:</strong> Aplicar estrategias de coaching e instrucción activa en la práctica docente (Objetivo 3).</p>
+                        <p><strong class="text-gray-900">Material a entregar:</strong> Portafolio final de Coaching Instruccional que integre los productos de las actividades anteriores como una solución cohesiva al problema de entrenamiento planteado.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Botón volver al inicio al final de la página -->
+            <div class="mt-12 text-center border-t border-gray-200 pt-8">
+                <a href="#inicio" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    Volver al inicio
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
