@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Contenidos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px; /* Evita que el menú fijo tape los títulos al navegar */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8 lg:p-12 pt-32 md:pt-28 lg:pt-28" id="inicio">
+
+    <!-- Menú de navegación fijo (Estilo Topbar Moderno) -->
+    <nav class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm transition-all">
+        <div class="max-w-5xl mx-auto px-4 py-3 md:py-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 sm:gap-4">
+                <a href="#contenidos-clave" class="flex flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <span class="font-semibold text-sm group-hover:text-white leading-tight">Desarrollo de Contenidos</span>
+                </a>
+                
+                <a href="#dinamicas" class="flex flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <span class="font-semibold text-sm group-hover:text-white leading-tight">Dinámicas de Aula</span>
+                </a>
+                
+                <a href="#cohesion" class="flex flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <span class="font-semibold text-sm group-hover:text-white leading-tight">Estrategia de Cohesión</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="bg-blue-900 text-white py-8 px-8 md:px-12">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight">4. Contenidos</h1>
+        </header>
+
+        <div class="p-8 md:p-12 space-y-12 pt-8">
+
+            <section aria-labelledby="contenidos-clave" id="contenidos-clave">
+                <h2 id="contenidos-clave" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">Desarrollo de Contenidos: Conceptos Clave por Unidad</h2>
+                
+                <div class="space-y-6">
+                    <!-- Módulo 1 -->
+                    <div class="bg-gray-50 p-6 md:p-8 rounded-xl border-l-4 border-blue-500 shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Módulo 1: El MCER, el Fenómeno del Washback y la Ética de la IA</h3>
+                        <ul class="space-y-3 text-gray-700 leading-relaxed text-justify md:text-left">
+                            <li><strong class="text-gray-900">1.1 El MCER y el Enfoque Orientado a la Acción:</strong> El lenguaje como herramienta del agente social para cumplir tareas. Uso de descriptores "Can Do" para vincular aprendizaje y evaluación.</li>
+                            <li><strong class="text-gray-900">1.2 Habilidades Reales vs. Mocks: Superando el Aprendizaje Superficial:</strong> Crítica a la "orientación técnica" excesiva al test; fomento de competencias lingüísticas y académicas transferibles al dominio de uso de la lengua (TLU).</li>
+                            <li><strong class="text-gray-900">1.3 Ética y Justicia Epistémica en la IA:</strong> Análisis del colonialismo digital y sesgos algorítmicos. Aplicación del framework COMPETIA-LAC para valorar saberes locales.</li>
+                            <li><strong class="text-gray-900">1.4 Mentalidad Centrada en el Ser Humano:</strong> Fortalecimiento de la agencia docente frente a la automatización, asegurando la responsabilidad ética en las decisiones pedagógicas.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Módulo 2 -->
+                    <div class="bg-gray-50 p-6 md:p-8 rounded-xl border-l-4 border-indigo-500 shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Módulo 2: Planificación Instruccional y la IA Generativa Activa</h3>
+                        <ul class="space-y-3 text-gray-700 leading-relaxed text-justify md:text-left">
+                            <li><strong class="text-gray-900">2.1 La Instrucción y la IA Generativa Activa:</strong> Integración de la IA en modelos de Flipped Classroom donde el estudiante resuelve problemas complejos.</li>
+                            <li><strong class="text-gray-900">2.2 Taxonomía del Entrenamiento de Pruebas:</strong> Diferenciación entre orientación al examen, coaching de ítems e instrucción de competencias para el éxito universitario.</li>
+                            <li><strong class="text-gray-900">2.3 Curación de Materiales y Planificación con IA:</strong> Uso de IA para seleccionar textos auténticos y diseñar planes de clase alineados a los requerimientos técnicos de las pruebas.</li>
+                            <li><strong class="text-gray-900">2.4 Rutas de Aprendizaje Aumentadas:</strong> Diseño de trayectorias personalizadas que alternan interacción humana e IA para optimizar el tiempo de instrucción activa.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Módulo 3 -->
+                    <div class="bg-gray-50 p-6 md:p-8 rounded-xl border-l-4 border-teal-500 shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Módulo 3: Producción Multimodal y Evaluación Analítica con IA</h3>
+                        <ul class="space-y-3 text-gray-700 leading-relaxed text-justify md:text-left">
+                            <li><strong class="text-gray-900">3.1 Habilidades de Escritura Académica y Estructura:</strong> Desarrollo de conciencia estructural (planeación, oraciones temáticas y evidencia) apoyado por asistentes de IA.</li>
+                            <li><strong class="text-gray-900">3.2 Producción de Materiales Multimodales:</strong> Ingeniería de prompts pedagógicos para crear recursos visuales y auditivos que reflejen criterios internacionales.</li>
+                            <li><strong class="text-gray-900">3.3 Evaluación Auténtica Aumentada y Rúbricas:</strong> Diseño de rúbricas orientadas al examinado y uso de IA para analizar la calidad argumentativa y no solo gramatical.</li>
+                            <li><strong class="text-gray-900">3.4 Análisis Lingüístico y Feedback con NotebookLM:</strong> Provisión de retroalimentación analítica detallada basada en perfiles de vocabulario y gramática del estudiante.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Módulo 4 -->
+                    <div class="bg-gray-50 p-6 md:p-8 rounded-xl border-l-4 border-purple-500 shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Módulo 4: Coaching Instruccional y Factores Psicológicos en el Entrenamiento</h3>
+                        <ul class="space-y-3 text-gray-700 leading-relaxed text-justify md:text-left">
+                            <li><strong class="text-gray-900">4.1 El Ciclo de Coaching del Docente-Entrenador:</strong> Implementación del modelo Partnership Instructional Coaching (PIC) bajo el ciclo recursivo: Identificar, Aprender y Mejorar.</li>
+                            <li><strong class="text-gray-900">4.2 Gestión de la Ansiedad y Factores Psicológicos:</strong> Estrategias para manejar el estrés y fortalecer la confianza mediante la "sabiduría del test" (test-wiseness)</li>
+                            <li><strong class="text-gray-900">4.3 El Docente como Investigador de su Práctica:</strong> Autonomía profesional para evaluar y adaptar herramientas de IA según la evolución del ecosistema tecnológico.</li>
+                            <li><strong class="text-gray-900">4.4 Actualización Profesional Continua y Ecosistema de IA:</strong> Participación en redes de apoyo para la co-creación de estándares éticos y actualización técnica en ELT.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section aria-labelledby="dinamicas" id="dinamicas">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">Dinámicas de Aula Apoyadas en IA</h2>
+                
+                <div class="space-y-6">
+                    <!-- Dinámica Online -->
+                    <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
+                        <h3 class="text-lg font-bold text-blue-900 mb-3">1. Dinámica Online: "Modelado Inmersivo de Curación de Contenidos"</h3>
+                        <p class="text-gray-700 leading-relaxed text-justify md:text-left mb-4">Esta dinámica sigue el principio de modelado docente: el profesor usa la IA en vivo mientras los participantes aprenden por observación.</p>
+                        <ul class="space-y-3 text-gray-700 leading-relaxed text-justify md:text-left">
+                            <li><strong class="text-gray-900">Apertura (10 min):</strong> Los participantes responden un sondeo en Mentimeter sobre los desafíos de encontrar textos auténticos para el nivel B2.</li>
+                            <li><strong class="text-gray-900">Núcleo Activo (40 min):</strong> El docente realiza un Think-Aloud mientras usa Gemini Canvas o Perplexity para investigar un tema de actualidad (ej. ética ambiental) y generar un banco de reactivos tipo IELTS/TOEFL. Los participantes observan la lógica de la ingeniería de prompts sin explicaciones tutoriales.</li>
+                            <li><strong class="text-gray-900">Cierre Reflexivo (10 min):</strong> En una pizarra de Miro, los participantes identifican cómo aplicarían ese modelo de curación en su propio contexto para evitar el "aprendizaje superficial".</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dinámica Presencial -->
+                    <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500"></div>
+                        <h3 class="text-lg font-bold text-indigo-900 mb-3">2. Dinámica Presencial: "Simulación de Ciclo PIC y Feedback Aumentado"</h3>
+                        <p class="text-gray-700 leading-relaxed text-justify md:text-left mb-4">Aprovecha el espacio físico para la práctica activa y el coaching directo.</p>
+                        <ul class="space-y-3 text-gray-700 leading-relaxed text-justify md:text-left">
+                            <li><strong class="text-gray-900">Apertura (10 min):</strong> Pregunta detonadora sobre los errores comunes en la retroalimentación de Writing y revisión rápida del material asincrónico.</li>
+                            <li><strong class="text-gray-900">Núcleo Activo (40 min):</strong> En grupos, los docentes realizan un role-playing. Un docente actúa como "entrenador" y otro como "estudiante". Utilizan NotebookLM para analizar un ensayo real y aplican el ciclo Identificar-Aprender-Mejorar. El docente titular circula como coach de coaches, brindando feedback sobre el proceso de instrucción activa.</li>
+                            <li><strong class="text-gray-900">Cierre (10 min):</strong> Puesta en común sobre cómo la IA permitió un feedback más analítico y auténtico, alineado con la competencia C6.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section aria-labelledby="cohesion" id="cohesion">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">Estrategia de Cohesión: "El Portafolio de Praxis Situada"</h2>
+                
+                <div class="bg-blue-50/50 p-6 md:p-8 rounded-xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                    <p class="text-gray-700 leading-relaxed text-justify md:text-left mb-4">
+                        Para dar continuidad a las fases asincrónica, online y presencial, se implementará un Portafolio Modular Acumulativo gestionado desde el Campus Virtual:
+                    </p>
+                    <ul class="space-y-4 text-gray-700 leading-relaxed text-justify md:text-left">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-gray-900">Hilos de Continuidad:</strong> Las dudas o hallazgos del cierre de la sesión presencial se retoman en el foro del campus, sirviendo de insumo inicial para la sesión online de la semana siguiente.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                            <span><strong class="text-gray-900">Artefacto Modular:</strong> Cada módulo culmina en un producto concreto (ej. un programa de entrenamiento, un banco de materiales multimodales o un plan de feedback con IA) que se integra en el portafolio final.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                            <span><strong class="text-gray-900">Nodo Integrador:</strong> El Campus Virtual centraliza las investigaciones realizadas con IA y los análisis de NotebookLM, permitiendo que el aprendizaje sea un flujo continuo donde la tecnología potencia la agencia humana y la justicia epistémica regional.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Botón volver al inicio al final de la página -->
+            <div class="mt-12 text-center border-t border-gray-200 pt-8">
+                <a href="#inicio" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    Volver al inicio
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
