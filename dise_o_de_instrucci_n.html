@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Diseño de Instrucción</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px; /* Evita que el menú fijo tape los títulos al navegar */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8 lg:p-12 pt-32 md:pt-28 lg:pt-28" id="inicio">
+
+    <!-- Menú de navegación fijo (Estilo Topbar Moderno) -->
+    <nav class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm transition-all">
+        <div class="max-w-5xl mx-auto px-4 py-3 md:py-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+                <a href="#metodologia" class="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mb-1 lg:mb-0 lg:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Metodología</span>
+                </a>
+                
+                <a href="#online" class="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mb-1 lg:mb-0 lg:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect><line x1="8" y1="21" x2="16" y2="21" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line><line x1="12" y1="17" x2="12" y2="21" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Sesiones Online</span>
+                </a>
+                
+                <a href="#presenciales" class="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mb-1 lg:mb-0 lg:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Sesiones Presenciales</span>
+                </a>
+
+                <a href="#estrategia" class="flex flex-col lg:flex-row items-center justify-center p-2 sm:px-4 sm:py-2.5 bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900 text-center">
+                    <svg class="w-5 h-5 mb-1 lg:mb-0 lg:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polyline points="2 17 12 22 22 17" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline><polyline points="2 12 12 17 22 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white leading-tight">Estrategia Global</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="bg-blue-900 text-white py-8 px-8 md:px-12">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight">3. Diseño de instrucción</h1>
+        </header>
+
+        <div class="p-8 md:p-12 space-y-12 pt-8">
+
+            <!-- 3.1 Metodología docente -->
+            <section aria-labelledby="metodologia-titulo" id="metodologia">
+                <h2 id="metodologia-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">3.1. Metodología docente</h2>
+                
+                <div class="bg-blue-50/50 p-6 md:p-8 rounded-xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                    <p class="text-gray-700 leading-relaxed text-justify md:text-left">
+                        El curso "IA Generativa para Docentes: Preparación de Pruebas Internacionales de Inglés" adopta como metodología docente el Aprendizaje Activo, implementado a través de tres enfoques articulados: Flipped Classroom como estructura organizativa de la modalidad híbrida, Aprendizaje Basado en Proyectos (PBL) como hilo conductor de cada módulo, y Coaching Instruccional como estrategia transversal a lo largo de los tres meses. En el modelo Flipped Classroom, el participante accede a los contenidos conceptuales de forma autónoma a través del campus virtual antes de cada sesión presencial, de modo que el tiempo en el aula se destina exclusivamente a la aplicación, el análisis crítico y la producción. El PBL articula cada módulo en torno a un reto o producto concreto — un programa de entrenamiento, un banco de materiales multimodales, un plan de coaching — que el participante construye de forma progresiva e integra en su práctica real. El Coaching Instruccional, por su parte, permea todas las sesiones como postura pedagógica: el docente del curso actúa como facilitador y acompañante del proceso de transformación profesional del participante, no como transmisor de contenidos. Esta combinación metodológica es coherente con el perfil andragógico de los participantes — docentes en ejercicio con experiencia previa, motivación intrínseca y necesidad de aplicabilidad inmediata — y con los tres tipos de objetivos del curso: cognitivo, procedimental y actitudinal-transformador.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 3.2 Dinámicas para las sesiones online -->
+            <section aria-labelledby="online-titulo" id="online">
+                <h2 id="online-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">3.2. Dinámicas para las sesiones online</h2>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
+                    <p class="text-gray-700 leading-relaxed text-justify md:text-left">
+                        Las sesiones online sincrónicas del curso tienen una duración de una hora y se desarrollan en semanas alternas, tras una semana de trabajo asincrónico en el campus virtual. Su estructura responde al principio de modelado docente: el docente-facilitador no enseña las herramientas digitales ni de IA de forma explícita, sino que las usa en vivo para desarrollar el contenido del módulo correspondiente, de modo que los participantes las incorporan a su repertorio pedagógico por observación e inmersión. La sesión se organiza en tres momentos. La apertura (10 minutos) consiste en una actividad interactiva — mediante herramientas de participación como Mentimeter, Educaplay o equivalentes — que activa los conocimientos trabajados asincrónicamente durante la semana y genera un punto de partida común para el grupo. El núcleo activo (35 minutos) es el corazón de la sesión: el docente desarrolla los conceptos clave del módulo usando en vivo una herramienta de creación, análisis o curación — entre ellas Gamma, Genially, NotebookLM, Gemini Canvas u otras según el módulo — modelando implícitamente cómo esa herramienta puede emplearse en un contexto real de preparación para exámenes internacionales de inglés. El cierre reflexivo (15 minutos) invita a los participantes a colaborar en una pizarra digital compartida — Miro u equivalente — identificando una aplicación concreta del contenido y la herramienta observada en su propia práctica docente, consolidando así tanto el aprendizaje disciplinar como el tecnológico.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 3.3 Dinámicas para las sesiones presenciales -->
+            <section aria-labelledby="presenciales-titulo" id="presenciales">
+                <h2 id="presenciales-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">3.3. Dinámicas para las sesiones presenciales</h2>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500"></div>
+                    <p class="text-gray-700 leading-relaxed text-justify md:text-left">
+                        Las sesiones presenciales del curso tienen una duración de una hora y se desarrollan en semanas alternas, precediendo a la semana de sesión online. Su función dentro del modelo híbrido es diferenciada y complementaria: mientras la sesión online es el espacio de exposición al contenido con modelado tecnológico en vivo, la sesión presencial es el espacio de práctica activa, simulación y síntesis colaborativa. El docente-facilitador asume en estas sesiones un rol de coach: no expone ni explica, sino que observa, formula preguntas y retroalimenta mientras los participantes trabajan. La sesión se organiza en tres momentos. La apertura (10 minutos) consiste en una actividad de activación rápida — pregunta detonadora, tarjetas de posicionamiento o encuesta en vivo — que conecta el material asincrónico trabajado previamente con la práctica del día, sin repetir contenidos ya trabajados. El núcleo activo (35 minutos) es el corazón de la sesión presencial: los participantes trabajan en grupos pequeños en una simulación o análisis de caso anclado en los contenidos del módulo, replicando un escenario real de entrenamiento para pruebas internacionales de inglés, mientras el docente circula entre los grupos en rol de coach, formulando preguntas que profundizan el análisis y orientan la toma de decisiones pedagógicas. El cierre reflexivo (15 minutos) incluye una puesta en común breve y una pregunta de transferencia — ¿cómo aplicarías esto con tu grupo de estudiantes la próxima semana? — que activa la competencia de instrucción activa y coaching docente y prepara al participante para la semana asincrónica que sigue.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 3.4 Estrategia de cohesión general del curso -->
+            <section aria-labelledby="estrategia-titulo" id="estrategia">
+                <h2 id="estrategia-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">3.4. Estrategia de cohesión general del curso</h2>
+                
+                <div class="bg-blue-50/50 p-6 md:p-8 rounded-xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                    <p class="text-gray-700 leading-relaxed text-justify md:text-left">
+                        La cohesión entre las tres modalidades de trabajo del curso — asincrónica en el campus virtual, sincrónica online y sincrónica presencial — se articula a través de un portafolio de práctica docente de construcción modular. A lo largo de los tres meses, cada módulo aporta un producto concreto que el participante desarrolla de forma progresiva: un programa de entrenamiento fundamentado en el MCER en el Módulo 1, un plan instruccional con IA generativa en el Módulo 2, un banco de materiales multimodales en el Módulo 3, y un plan de coaching para su grupo de estudiantes en el Módulo 4. Estos cuatro productos se integran al finalizar el curso en un recurso profesional completo y directamente aplicable al contexto real del participante. El campus virtual actúa como nodo integrador de todo el recorrido: aloja los materiales asincrónicos de cada semana, recibe y organiza los productos modulares, y centraliza la comunicación entre sesiones a través del foro de consultas. Este foro cumple además una función de continuidad reflexiva específica: las preguntas abiertas con las que cierra cada sesión presencial — ¿cómo aplicarías esto con tu grupo la próxima semana? — se retoman al inicio de la sesión online siguiente, creando un puente explícito entre ambos espacios sincrónicos y evitando que el participante experimente la alternancia semanal como una discontinuidad. Esta estrategia de cohesión refuerza la competencia de desarrollo profesional continuo y convierte el curso en su conjunto en una experiencia de transformación docente acumulativa y sostenida.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Botón volver al inicio al final de la página -->
+            <div class="mt-12 text-center border-t border-gray-200 pt-8">
+                <a href="#inicio" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    Volver al inicio
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
