@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Diseño Curricular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px; /* Evita que el menú fijo tape los títulos al navegar */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8 lg:p-12 pt-24 md:pt-28 lg:pt-28" id="inicio">
+
+    <!-- Menú de navegación fijo (Estilo Topbar Moderno) -->
+    <nav class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm transition-all">
+        <div class="max-w-4xl mx-auto px-4 py-3 md:py-4">
+            <div class="flex flex-row justify-center items-center gap-2 sm:gap-6">
+                <a href="#objetivos-titulo" class="flex-1 sm:flex-none flex items-center justify-center px-2 py-2 sm:px-6 sm:py-2.5 bg-white border border-blue-200 rounded-lg sm:rounded-full shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 sm:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white">Objetivos</span>
+                </a>
+                
+                <a href="#competencias-titulo" class="flex-1 sm:flex-none flex items-center justify-center px-2 py-2 sm:px-6 sm:py-2.5 bg-white border border-blue-200 rounded-lg sm:rounded-full shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 sm:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white">Competencias</span>
+                </a>
+                
+                <a href="#indice-titulo" class="flex-1 sm:flex-none flex items-center justify-center px-2 py-2 sm:px-6 sm:py-2.5 bg-white border border-blue-200 rounded-lg sm:rounded-full shadow-sm hover:shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 group text-blue-900">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 sm:mr-2 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                    <span class="font-semibold text-xs sm:text-sm group-hover:text-white">Índice</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        
+        <!-- Header Section -->
+        <header class="bg-blue-900 text-white py-8 px-8 md:px-12">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight">2. Diseño curricular</h1>
+        </header>
+
+        <div class="p-8 md:p-12 space-y-12 pt-8">
+
+            <section aria-labelledby="objetivos-titulo">
+                <h2 id="objetivos-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">OBJETIVOS DE APRENDIZAJE</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                        <h3 class="font-semibold text-blue-800 text-lg mb-2">Objetivo 1 — Cognitivo</h3>
+                        <p class="text-gray-700 leading-relaxed">Analizar el Marco Común Europeo de Referencia (MCER) y los enfoques metodológicos vigentes para fundamentar el diseño de programas de entrenamiento para pruebas internacionales de inglés.</p>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                        <h3 class="font-semibold text-blue-800 text-lg mb-2">Objetivo 2 — Procedimental</h3>
+                        <p class="text-gray-700 leading-relaxed">Diseñar programas y materiales de entrenamiento para pruebas internacionales de inglés integrando herramientas de IA generativa como recurso pedagógico para personalizar el aprendizaje y el feedback.</p>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                        <h3 class="font-semibold text-blue-800 text-lg mb-2">Objetivo 3 — Actitudinal/Transformador</h3>
+                        <p class="text-gray-700 leading-relaxed">Aplicar estrategias de coaching e instrucción activa en la práctica docente, adoptando una postura crítica y ética frente al uso de IA generativa en la preparación de exámenes internacionales.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section aria-labelledby="competencias-titulo">
+                <h2 id="competencias-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">COMPETENCIAS QUE ADQUIRIR</h2>
+                <p class="text-gray-600 mb-6 italic">Por cada objetivo se crearon al menos 2 competencias.</p>
+
+                <div class="space-y-8">
+                    <!-- Competencias Obj 1 -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 bg-gray-100 inline-block px-4 py-1 rounded-md">Objetivo 1 — Cognitivo</h3>
+                        <ul class="space-y-4 pl-2">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C1</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Lingüística Aplicada y Evaluación de Lenguas:</strong> Interpretar los niveles y descriptores del MCER (A1–C2) para identificar los requerimientos lingüísticos específicos de las principales pruebas internacionales de inglés y fundamentar decisiones de diseño curricular.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C2</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Metodología de Enseñanza de Lenguas Extranjeras (ELT):</strong> Evaluar críticamente los enfoques metodológicos vigentes en la preparación para exámenes de alto impacto, distinguiendo entre estrategias con evidencia empírica y prácticas pedagógicas desactualizadas.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Competencias Obj 2 -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 bg-gray-100 inline-block px-4 py-1 rounded-md">Objetivo 2 — Procedimental</h3>
+                        <ul class="space-y-4 pl-2">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C3</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Diseño Curricular y Planificación Instruccional:</strong> Diseñar programas de entrenamiento para pruebas internacionales de inglés estructurados por niveles del MCER, incorporando herramientas de IA generativa — entre ellas generadores de contenido, asistentes de escritura y plataformas de diseño instruccional, entre otras — para la creación de materiales y simulacros adaptativos.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C4</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Tecnología Educativa e IA Generativa:</strong> Seleccionar y utilizar herramientas de IA generativa disponibles — entre ellas Perplexity, NotebookLM, Gemini Canvas, Voxdeck y RunwayML, entre otras — para personalizar el feedback y optimizar los procesos de preparación para exámenes internacionales, evaluando la pertinencia de cada herramienta según el contexto pedagógico.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C5</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Producción de Materiales Didácticos Multimodales:</strong> Crear materiales de entrenamiento — textuales, visuales y audiovisuales — alineados con los formatos y criterios de evaluación de las principales pruebas internacionales de inglés, usando herramientas de IA generativa como apoyo en el proceso de producción.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Competencias Obj 3 -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 bg-gray-100 inline-block px-4 py-1 rounded-md">Objetivo 3 — Actitudinal/Transformador</h3>
+                        <ul class="space-y-4 pl-2">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C6</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Coaching Docente e Instrucción Activa:</strong> Implementar estrategias de instrucción activa y coaching docente en sesiones de entrenamiento para pruebas internacionales — presenciales y virtuales — apoyándose en herramientas digitales y de IA generativa según las necesidades del grupo.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C7</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Ética Profesional y Uso Responsable de la IA:</strong> Adoptar una postura ética, crítica y reflexiva frente al uso de herramientas de IA generativa en la práctica docente, considerando privacidad, sesgo algorítmico, autoría intelectual y uso responsable de la tecnología en contextos educativos.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded text-sm mr-3 mt-0.5">C8</span>
+                                <p class="text-gray-700"><strong class="text-gray-900">Desarrollo Profesional Continuo en ELT:</strong> Asumir el aprendizaje profesional continuo como condición inherente al ejercicio del docente-entrenador, desarrollando la capacidad de evaluar, adoptar y adaptar nuevas herramientas de IA generativa a medida que el ecosistema tecnológico evoluciona.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section aria-labelledby="indice-titulo">
+                <h2 id="indice-titulo" class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2">ÌNDICE DE CONTENIDOS</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Módulo 1 -->
+                    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold text-blue-900 mb-2">MÓDULO 1: El MCER, el Fenómeno del Washback y la Ética de la IA</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong class="text-gray-800">Objetivo:</strong> Analizar los estándares del MCER y los principios éticos para fundamentar el diseño de programas que prioricen el desarrollo de habilidades reales sobre el entrenamiento superficial. (C1, C2, C7)</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4 text-sm">
+                            <li>Unidad 1.1: El MCER y el Enfoque Orientado a la Acción</li>
+                            <li>Unidad 1.2: Habilidades Reales vs. Mocks — Superando el Aprendizaje Superficial</li>
+                            <li>Unidad 1.3: Ética y Justicia Epistémica en la IA</li>
+                            <li>Unidad 1.4: Mentalidad Centrada en el Ser Humano</li>
+                        </ul>
+                        <div class="text-xs text-gray-500 bg-gray-50 p-2 rounded">
+                            <strong>Fuentes:</strong> Naser & Ali (2023); Bérešová (2025); UNESCO (2025); Clark & Yu (2025); Galasso (2026)
+                        </div>
+                    </div>
+
+                    <!-- Módulo 2 -->
+                    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold text-blue-900 mb-2">MÓDULO 2: Planificación Instruccional y la IA Generativa Activa</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong class="text-gray-800">Objetivo:</strong> Diseñar programas de entrenamiento que utilicen la IA como recurso activo para la personalización y curación de contenidos académicos. (C3, C4, C8)</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4 text-sm">
+                            <li>Unidad 2.1: La Instrucción y la IA Generativa Activa</li>
+                            <li>Unidad 2.2: Taxonomía del Entrenamiento de Pruebas</li>
+                            <li>Unidad 2.3: Curación de Materiales y Planificación con IA</li>
+                            <li>Unidad 2.4: Rutas de Aprendizaje Aumentadas</li>
+                        </ul>
+                        <div class="text-xs text-gray-500 bg-gray-50 p-2 rounded">
+                            <strong>Fuentes:</strong> Permatasari et al. (2024); UNESCO (2025); Clark & Yu (2025); Galasso (2026)
+                        </div>
+                    </div>
+
+                    <!-- Módulo 3 -->
+                    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold text-blue-900 mb-2">MÓDULO 3: Producción Multimodal y Evaluación Analítica con IA</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong class="text-gray-800">Objetivo:</strong> Crear materiales de entrenamiento y sistemas de retroalimentación utilizando herramientas de IA para optimizar la producción escrita y oral. (C4, C5)</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4 text-sm">
+                            <li>Unidad 3.1: Habilidades de Escritura Académica y Estructura</li>
+                            <li>Unidad 3.2: Producción de Materiales Multimodales</li>
+                            <li>Unidad 3.3: Evaluación Auténtica Aumentada y Rúbricas</li>
+                            <li>Unidad 3.4: Análisis Lingüístico y Feedback con NotebookLM</li>
+                        </ul>
+                        <div class="text-xs text-gray-500 bg-gray-50 p-2 rounded">
+                            <strong>Fuentes:</strong> Bérešová (2025); UNESCO (2025); Clark & Yu (2025); Galasso (2026)
+                        </div>
+                    </div>
+
+                    <!-- Módulo 4 -->
+                    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-bold text-blue-900 mb-2">MÓDULO 4: Coaching Instruccional y Factores Psicológicos en el Entrenamiento</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong class="text-gray-800">Objetivo:</strong> Aplicar estrategias de coaching y gestionar los factores no cognitivos para mejorar el rendimiento y bienestar del estudiante. (C6, C8)</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4 text-sm">
+                            <li>Unidad 4.1: El Ciclo de Coaching del Docente-Entrenador</li>
+                            <li>Unidad 4.2: Gestión de la Ansiedad y Factores Psicológicos</li>
+                            <li>Unidad 4.3: El Docente como Investigador de su Práctica</li>
+                            <li>Unidad 4.4: Actualización Profesional Continua y Ecosistema de Herramientas de IA en ELT</li>
+                        </ul>
+                        <div class="text-xs text-gray-500 bg-gray-50 p-2 rounded">
+                            <strong>Fuentes:</strong> Recalde-García et al. (2025); Permatasari et al. (2024); UNESCO (2025); Galasso (2026)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Botón volver al inicio al final de la página -->
+            <div class="mt-12 text-center border-t border-gray-200 pt-8">
+                <a href="#inicio" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    Volver al inicio
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
